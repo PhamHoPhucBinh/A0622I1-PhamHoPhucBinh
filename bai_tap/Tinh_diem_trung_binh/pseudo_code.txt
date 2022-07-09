@@ -1,0 +1,9 @@
+Begin
+	Input (M ; P ; C )
+	If (M>=0 ; P>=0 ; C>=0)
+		Average = (M + P + C) / 3
+			Display Average
+	If else
+		Display "error"
+	If End
+End

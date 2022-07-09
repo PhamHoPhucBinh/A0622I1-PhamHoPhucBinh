@@ -1,0 +1,8 @@
+Begin
+	random N(0:9)
+	Input M
+	If (N==M)
+		Display "correct"
+	Else
+		Display "Incorrect"
+End
