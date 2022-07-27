@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<label>Chieu cao</label>
+<input id="height" type="number"></br>
+<label>Can nang</label>
+<input id="weight" type="number"></br>
+<button type="button" id="BMI" onclick="tinhBMI()">BMI</button></br>
+<input id="ketquaBMI">
+
+
+</body>
+<script>
+    function tinhBMI() {
+        let chieucao = document.getElementById("height").value;
+        let cannang = document.getElementById("weight").value;
+        let bmi = chieucao / ( cannang ^ 2 );
+        if (bmi < 18)
+            bmi = "Underweight"
+        else if (bmi < 25.0)
+            bmi = "Normal"
+        else if (bmi < 30.0)
+            bmi = "Overweight"
+        else
+            bmi = "Obese"
+
+        document.getElementById("ketquaBMI").value = bmi
+    }
+</script>
+</html>

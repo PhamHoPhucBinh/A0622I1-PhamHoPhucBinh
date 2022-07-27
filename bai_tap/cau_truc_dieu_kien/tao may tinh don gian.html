@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tao may tinh don gian </title>
+</head>
+<body>
+<table border="5" cellspacing="20" cellpadding="0" >
+    <tr>
+        <th colspan="4">
+            <input type="text" readonly id="output" style="width:12cm;height:1cm"/>
+        </th>
+
+    </tr>
+    <tr>
+        <td align="center">
+            <input onclick="calculator('1')"  id="so1" style="width:2.5cm;height:1cm" value="1" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('2')" id="so2" style="width:2.5cm;height:1cm" value="2" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('3')" id="so3" style="width:2.5cm;height:1cm" value="3" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('+')" id="dau+" style="width:2.5cm;height:1cm" value="+" type="button"></td>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input onclick="calculator('4')" id="so4" style="width:2.5cm;height:1cm" value="4" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('5')" id="so5" style="width:2.5cm;height:1cm" value="5" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('6')" id="so6" style="width:2.5cm;height:1cm" value="6" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('-')" id="dau-" style="width:2.5cm;height:1cm" value="-" type="button"></td>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input onclick="calculator('7')" id="so7" style="width:2.5cm;height:1cm" value="7" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('8')" id="so8" style="width:2.5cm;height:1cm" value="8" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('9')" id="so9" style="width:2.5cm;height:1cm" value="9" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('*')" id="dauX" style="width:2.5cm;height:1cm" value="X" type="button"></td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input onclick="clear1()" id="clear" style="width:2.5cm;height:1cm" value="C" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('0')" id="so0" style="width:2.5cm;height:1cm" value="0" type="button"></td>
+        </td>
+        <td>
+            <input id="dau=" onclick="calculator('=')" style="width:2.5cm;height:1cm" value="=" type="button"></td>
+        </td>
+        <td>
+            <input onclick="calculator('/')" id="dau/" style="width:2.5cm;height:1cm" value="/" type="button"></td>
+        </td>
+    </tr>
+    <script>
+        let str = "";
+        function calculator(value) {
+
+
+            if (value === "="){
+                str = eval(str);
+            }else {
+                str += value;
+            }
+            document.getElementById("output").value = str;
+        }
+        function clear1() {
+            str ="";
+            document.getElementById("output").value ="";
+
+        }
+
+    </script>
+</table>
+</body>
+</html>

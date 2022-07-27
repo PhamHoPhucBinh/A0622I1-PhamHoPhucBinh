@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator: Ung dung chuyen doi tien te</title>
+</head>
+<body>
+<h1>Bai tap : Ung dung chuyen doi tien te</h1>
+<form>
+    <span>Amount</span></br>
+    <input type="number" id="amount"></br>
+    <span>From Currency</span></br>
+    <select id="fromcurrency">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select></br>
+    <span>To Currency</span></br>
+    <select id="tocurrency">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select></br>
+    <input type="button" onclick="convert()" value="submit"></br>
+    <label>Result : </label><input type="text" id="sotien"></input>
+
+
+
+
+</form>
+<script>
+    function convert(){
+        let amount = document.getElementById("amount").value;
+        let from,to;
+        from = document.getElementById("fromcurrency").value;
+        to = document.getElementById("tocurrency").value;
+        if (from === "USD" && to === "VND") {
+            document.getElementById("sotien").value = amount * 23000;
+        }else{
+                document.getElementById("sotien").value = amount/23000;}
+
+        }
+
+</script>
+</body>
+<style>
+
+</style>
+</html>
