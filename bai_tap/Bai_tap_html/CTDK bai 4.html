@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK bai 4</title>
+</head>
+<body>
+<h1>bai 4</h1>
+<p>nhap so nguyen thu 1</p>
+<input id="so1" type="number"/></br>
+<p>nhap so nguyen thu 2</p>
+<input id="so2" type="number"/></br>
+<p>nhap so nguyen thu 3</p>
+<input id="so3" type="number"/></br>
+<button type="button" onclick="solonnhat()">tim so lon nhat</button></br>
+<input type="number" readonly id="result"/>
+</body>
+<script>
+    function solonnhat() {
+        let a = parseInt(document.getElementById("so1").value);
+        let b = parseInt(document.getElementById("so2").value);
+        let c = parseInt(document.getElementById("so3").value);
+        if (a>b && a>c){
+            document.getElementById("result").value = a;
+            }else if(b>c){
+            document.getElementById("result").value = b;
+        }else{
+            document.getElementById("result").value = c;
+
+    }
+    }
+</script>
+</html>

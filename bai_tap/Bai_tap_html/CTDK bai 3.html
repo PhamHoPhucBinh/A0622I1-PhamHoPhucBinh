@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK bai 3</title>
+</head>
+<body>
+<h1>bai 3</h1>
+<p>nhap mot so nguyen</p>
+<input id="so" type="number"/></br>
+<input id="result" type="text" readonly></br>
+
+<button onclick="check()" type="button" id="check" value="check">check</button>
+
+
+</body>
+<script>
+
+    function check() {
+        let a = document.getElementById("so").value;
+        if (a > 0) {
+            document.getElementById("result").value = "lon hon 0";
+        }else if (a == 0) {
+            document.getElementById("result").value = "a=0";
+        }else{
+            document.getElementById("result").value = "nho hon 0";
+        }
+
+    }
+</script>
+</html>

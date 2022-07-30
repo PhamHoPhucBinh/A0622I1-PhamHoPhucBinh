@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK bai 2</title>
+</head>
+<body>
+<h1>bai 2</h1>
+<p>nhap so tuoi cua ban :</p>
+<input type="number" id="age" /></br>
+<button onclick="checkage()" type="submit">kiem tra tuoi</button>
+<input id="result" type="text" readonly/>
+</body>
+
+<script>
+    function checkage() {
+        let a = document.getElementById("age").value;
+        if (a >= 15){
+            document.getElementById("result").value = 'da du tuoi hoc cap 3';
+        }else {
+            document.getElementById("result").value = 'chua du tuoi hoc cap 3';
+        }
+
+    }
+</script>
+</html>

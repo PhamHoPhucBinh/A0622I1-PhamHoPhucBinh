@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK bai 1</title>
+</head>
+<body>
+<h1>bai1</h1>
+<h2>nhap so a</h2></br>
+<input type="number" id="a"></input></br>
+<h2>nhap so b</h2></br>
+<input type="number" id="b"></input></br>
+<button type="submit" onclick= "chia()" >Chia</button>
+<input type="text" id="result"/>
+
+
+
+</body>
+<script>
+    function chia() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if (a % b == 0) {
+
+            document.getElementById("result").value = "a chia het cho b";
+        } else {
+            document.getElementById("result").value = "a k chia het cho b";
+        }
+    }
+
+
+</script>
+</html>
