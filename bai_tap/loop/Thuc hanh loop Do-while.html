@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do-while training</title>
+</head>
+<body>
+<!--<input id="zone" type="number"/></br>-->
+<!--<button onclick="sum()" type="button" >Sum</button></br>-->
+<!--<input id="total" type="number"/>-->
+</body>
+<script>
+
+    // for (i=0;i<20;){
+    //     i = i+2;
+    //     let text = '';
+    //     text += "the number is" + i + "</br>";
+    //     document.write(text);
+    //
+    // }
+
+
+
+
+    // function sum(){
+    //
+    // let total = 0;
+    // let a = document.getElementById("zone").value;
+    // for (i=0;i<=a;i++){
+    //     total += i;
+    //     document.getElementById("total").value = total;
+    //
+    // }
+    // }
+
+    // let a = parseInt(prompt("nhap 1 so"));
+    // let total = 0;
+    // while (a<0){
+    //    a = prompt('nhap lai');
+    // };
+    //
+    // while (a>0){
+    //     total+=a;
+    //     a--;
+    // }
+    // alert(total);
+
+
+   // let i = 1;
+   // while (i<10){
+   //     i++;
+   //     document.write("<hr width=" + i + "%>");
+   // }
+
+    let table;
+    table = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+    for(i=1;i<=10;i++){
+        table = table + "<tr>";
+        for(j=1;j<=10;j++){
+        table = table + "<td>" + i*j + "</td>";
+        }
+        table = table + "<tr>";
+    }
+    table = table + "</table>";
+
+    document.write(table);
+
+
+
+
+</script>
+</html>

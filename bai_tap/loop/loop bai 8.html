@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="play()" type="button">Play</button>
+</body>
+<script>
+    function play() {
+        let zone = parseInt(prompt("Nhập khoảng số bạn muốn chơi"));
+        let a = Math.floor(Math.random() * zone);
+        console.log(a);
+        for (i = 1; i <= 4; i++) {
+            if(i==4) {
+                alert("ban da thua");
+                return;
+            }
+
+            let c = parseInt(prompt("doanlan" + i));
+
+            if (c > a) {
+                alert("chon so nho hon");
+            } else if (c < a) {
+                alert("cho so lon hon");
+            } else if (c == a) {
+                alert("ban da doan dung");
+                return;
+            }
+
+            }
+
+    }
+
+
+            // while (i=4){
+            //     alert ("ban da thua");
+            // }
+
+
+            // let c1 = parseInt(prompt("doanlan1"));
+            //
+            // if (c1>zone) {
+            //     prompt("chon so nho hon");
+            // }else if(c1<zone){
+            //     prompt("cho so lon hon");
+            // }else{
+            //     prompt("ban da doan dung");
+            // }
+
+
+
+</script>
+</html>
