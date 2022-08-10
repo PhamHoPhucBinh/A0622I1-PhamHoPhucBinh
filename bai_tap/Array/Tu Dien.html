@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Dien</title>
+</head>
+<body>
+
+<input id="Eng" type="text"></br>
+
+<button type="button" onclick="Translate()"/>tra</button>
+
+<input id="Vie" type="text">
+<script>
+    const english = ['hello','thanks','good','bad'];
+    const vietnam = ['xinchao','camon','tot','xau'];
+
+
+    function Translate() {
+        let a = document.getElementById("Eng").value;
+        let b = document.getElementById("Vie").value;
+        let indexEng = -1;
+        let indexVn = -1;
+        indexEng = english.indexOf(a);
+        indexVn = vietnam.indexOf(b);
+        if (indexEng != -1){
+            document.getElementById("Vie").value = vietnam[indexEng];
+        }else if (indexVn != -1){
+            document.getElementById("Eng").value = english[indexVn];
+        }
+
+    }
+
+</script>
+</body>
+</html>

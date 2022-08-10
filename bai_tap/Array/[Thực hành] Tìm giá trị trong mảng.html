@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm giá trị trong mảng</title>
+</head>
+<body>
+<input type="number" id="inputnumber"/>
+<button type="button" onclick="checkarray()">check</button>
+<input type="text" id="output"/>
+<script>
+    let array = ["so1", "so2", "so3", "so4", "so5", "so6"];
+
+    function checkarray() {
+        let input = document.getElementById("inputnumber").value;
+        for (i = 0; i < array.length; i++) {
+            if (input == i) {
+                document.getElementById("output").value =  array[i] ;
+            }
+        }
+    }
+</script>
+</body>
+</html>
