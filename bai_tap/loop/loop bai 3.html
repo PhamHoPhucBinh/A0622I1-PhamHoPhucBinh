@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Loop bai 3</title>
+    <title>in ra fibonacci</title>
 </head>
 <body>
 <script>
-    let f1 = 0;
-    let f2 = 1;
-
-document.write("hai so fibonacci dau tien la :"+"0"+"1"+ "</br>")
-
-    for (i=1;i<=18;i++){
-        let fn = f1 + f2;
-        f1=f2
-        f2=fn
-
-
-        document.write(fn + "</br>");
+    let beginFibonacci = 1;
+    let numFibonacci = 1;
+    let sum = 0;
+    let num = +prompt("nhập số fibonacci mà bạn muốn hiển thị ra")
+    if(num<=2){
+        switch (num) {
+            case 0:
+                alert("hãy nhập số lớn hơn 0");
+                break;
+            case 1:
+                document.write("1" + "<br>");
+                break;
+            case 2:
+                document.write("1" + "<br>");
+                document.write("1" + "<br>");
+                break;
+        }
+    }else if(num>2){
+        document.write("1" + "<br>");
+        document.write("1" + "<br>");
+        for(let i=3;i<=num;i++){
+            sum = beginFibonacci + numFibonacci;
+            document.write(sum + "<br>");
+            beginFibonacci = numFibonacci;
+            numFibonacci = sum;
+        }
     }
-
 </script>
 </body>
 </html>
